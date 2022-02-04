@@ -1,9 +1,11 @@
+//A Two palyer Tic Tac Toe program implementation
 #include <iostream>
 using namespace std;
-
+//Board of 2-D Array (3X3) size
 char board[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 char current_marker;
 int current_player;
+//Board Design
 void DrawBoard()
 {
     cout << " " << board[0][0] << " | " << board[0][1] << " | " << board[0][2] << endl;
@@ -62,6 +64,8 @@ int winner()
     }
     return 0;
 }
+
+//Swapping of Players after each turn 
 void swap_player_and_marker()
 {
     if (current_marker == 'X')
