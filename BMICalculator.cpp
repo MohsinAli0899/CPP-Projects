@@ -1,7 +1,8 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
+/*First a function which will take weight and height as an input 
+and will calculate the BMI ratio and then assign you the category*/
 void CalculatorBMI()
 {
     system("cls");
@@ -49,7 +50,7 @@ void CalculatorBMI()
     cout<<"Press any Key to go back to Menu";
     getch();
 }
-
+/*Basic Rules and different categories according to the calculated BMI*/
 void rules()
 {
     system("cls");
@@ -75,7 +76,7 @@ int main()
         cout<<"2. Rules to calculate BMI"<<endl;
         cout<<"3. Exit Program"<<endl;
         cout<<"Select Option: ";
-        char op = getche();
+        char op = getche();     //Asks which operation the user would like to do
         if (op == '1')
         {
             CalculatorBMI();
