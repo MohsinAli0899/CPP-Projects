@@ -63,9 +63,10 @@ public:
 //Driver Code
 int main()
 {
+    system("cls");
     //Object Creation
     Bank Customer;
-    //Infinite While loop for menu
+    //Infinite do-While loop for menu
     do
     { 
         cout << endl
